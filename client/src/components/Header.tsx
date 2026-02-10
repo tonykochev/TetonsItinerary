@@ -3,6 +3,8 @@ import { useModalStore } from 'store/useModalStore'
 import { useAuth } from 'contexts/AuthContext'
 import OnlineIndicator from 'components/OnlineIndicator'
 import { AppBar, IconButton, Avatar, Popover, List, ListSubheader, ListItemButton } from '@mui/material'
+import logo from 'assets/GTNPLogo2.png'
+
 
 interface Props {}
 
@@ -35,7 +37,8 @@ const Header: React.FC<Props> = () => {
 
   return (
     <AppBar className='header' position='static'>
-      <h1>Grand Teton National Park</h1>
+      <img src={logo} alt="Grand Tetons Itinerary" className="header-logo" />
+
 
       <IconButton onClick={openPopover}>
         <OnlineIndicator online={isLoggedIn}>

@@ -36,6 +36,11 @@ code {
   justify-content: space-between !important;
 }
 
+.header-logo{
+  height: 100px;
+  margin-left: 16px;
+}
+
 .error {
   margin: 0.5rem;
   color: red;

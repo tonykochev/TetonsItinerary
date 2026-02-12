@@ -1,0 +1,83 @@
+html, body, #root, .App {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.home {
+    font-family: system-ui, sans-serif;
+    color: #1f2937;
+    width: 100%;
+  }
+  
+  .hero {
+    min-height: 80vh;
+    width: 100%;
+    background-image: url("../assets/tetons.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  /* dark overlay so text is readable */
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+  }
+  
+  .hero * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .primary-btn {
+    background-color: #22c55e;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .primary-btn:hover {
+    background-color: #16a34a;
+  }
+  
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 4rem;
+    background: white;
+  }
+  
+  .feature-card {
+    background: #f9fafb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  

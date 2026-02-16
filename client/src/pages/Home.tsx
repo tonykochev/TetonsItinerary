@@ -1,5 +1,6 @@
 import React from "react";
 import "styles/home.css";
+import meImg from "assets/";
 
 const Home: React.FC = () => {
   return (
@@ -26,7 +27,26 @@ const Home: React.FC = () => {
           <p>Update your plan anytime and access it anywhere.</p>
         </div>
       </section>
+
+      <section className="about">
+        <div className="about-image">
+            <img src={meImg} alt="Me" />
+        </div>
+
+        <div className="about-text">
+            <h2>About Me</h2>
+                <p>
+                Hi! I’m Tony, a computer science and data science student who loves building
+                useful apps and exploring national parks. I created the Tetons Itinerary
+                Builder to help people plan unforgettable trips without the stress of
+                figuring everything out themselves.
+                </p>
+            </div>
+        </section>
+
     </div>
+
+    
   );
 };
 

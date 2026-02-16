@@ -2,14 +2,15 @@ import React from 'react'
 import { useAuth } from 'contexts/AuthContext'
 import AuthModal from 'components/AuthModal'
 import Header from 'components/Header'
-import Home from 'pages/Home'
+/*import Home from 'pages/Home'*/
+import Hikes from "pages/Hikes"
 import 'styles/ReactWelcome.css'
 
 const App = () => {
   return (
     <div className='App'>
       <Header />
-      <Home />
+      <Hikes />
       <LoggedInStatus />
       <AuthModal />
     </div>

@@ -80,4 +80,36 @@ html, body, #root, .App {
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     text-align: center;
   }
+
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 5rem 3rem;
+    background: #f1f5f9;
+  }
+  
+  .about-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }
+  
+  .about-text {
+    max-width: 500px;
+  }
+  
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
   

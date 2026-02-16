@@ -1,6 +1,6 @@
 import React from "react";
 import "styles/home.css";
-import meImg from "assets/";
+import meImg from "assets/me.jpg";
 
 const Home: React.FC = () => {
   return (

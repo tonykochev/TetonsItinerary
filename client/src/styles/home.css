@@ -12,7 +12,7 @@ html, body, #root, .App {
   }
   
   .hero {
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url("../assets/tetons.jpg");
     background-size: cover;
@@ -111,11 +111,12 @@ html, body, #root, .App {
     font-size: 1.1rem;
     line-height: 1.6;
   }
-  
-  @media (max-width: 768px) {
-    .about {
-      flex-direction: column;
-      text-align: center;
-    }
+  .clickable {
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
+  .clickable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }

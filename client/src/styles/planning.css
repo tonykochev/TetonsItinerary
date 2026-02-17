@@ -1,0 +1,67 @@
+.planning-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #1b120a;
+    color: #f3e9dc;
+  }
+  
+  /* HERO */
+  .planning-hero {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(
+        rgba(40, 24, 12, 0.65),
+        rgba(40, 24, 12, 0.65)
+      ),
+      url("../assets/tetons.jpg") center/cover no-repeat;
+    text-align: center;
+  }
+  
+  .planning-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #f7d7a7; /* warm sand */
+    letter-spacing: 1px;
+  }
+  
+  .planning-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    color: #f0dcc2;
+  }
+  
+  /* CONTENT */
+  .planning-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+  
+  .planning-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #d2a679; /* leather tan */
+  }
+  
+  .planning-section p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #f3e9dc;
+  }
+  
+  .planning-section ul,
+  .planning-section ol {
+    margin-top: 15px;
+    padding-left: 20px;
+  }
+  
+  .planning-section li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    color: #f7efe4;
+  }
+  /* subtle divider look */
+.planning-section:not(:last-child) {
+    border-bottom: 1px solid rgba(210, 166, 121, 0.2);
+  }
+  

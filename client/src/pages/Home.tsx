@@ -17,12 +17,18 @@ const Home: React.FC = () => {
       </header>
 
       <section className="features">
-        <div className="feature-card">
+        <div 
+          className="feature-card clickable"
+          onClick={() => navigate("/planning")}
+          >
           <h3>🗺️ Smart Planning</h3>
           <p>Create day-by-day itineraries based on your interests.</p>
         </div>
 
-        <div className="feature-card">
+        <div 
+          className="feature-card clickable"
+          onClick={() => navigate("/hikes")}
+          >
           <h3>🥾 Trails & Activities</h3>
           <p>Explore hikes, lakes, wildlife, and scenic routes.</p>
         </div>

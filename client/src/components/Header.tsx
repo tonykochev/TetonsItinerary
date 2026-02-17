@@ -4,6 +4,7 @@ import { useAuth } from 'contexts/AuthContext'
 import OnlineIndicator from 'components/OnlineIndicator'
 import { AppBar, IconButton, Avatar, Popover, List, ListSubheader, ListItemButton } from '@mui/material'
 import logo from 'assets/GTNPLogo2.png'
+import { Link } from 'react-router-dom'
 
 
 interface Props {}
@@ -37,8 +38,9 @@ const Header: React.FC<Props> = () => {
 
   return (
     <AppBar className='header' position='static'>
-      <img src={logo} alt="Grand Tetons Itinerary" className="header-logo" />
-
+      <Link to="/">
+        <img src={logo} alt="Grand Tetons Itinerary" className="header-logo" />
+      </Link>
 
       <IconButton onClick={openPopover}>
         <OnlineIndicator online={isLoggedIn}>

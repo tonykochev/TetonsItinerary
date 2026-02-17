@@ -1,14 +1,19 @@
 import React from "react";
 import "styles/home.css";
 import meImg from "assets/me.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="home">
       <header className="hero">
         <h1>Tetons Itinerary Builder</h1>
         <p>Plan your perfect adventure in Grand Teton National Park</p>
-        <button className="primary-btn">Build My Itinerary</button>
+        <button className="primary-btn" onClick={() => navigate("/hikes")}>
+          Build My Itinerary
+        </button>
       </header>
 
       <section className="features">

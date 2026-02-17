@@ -1,19 +1,31 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { useAuth } from 'contexts/AuthContext'
 import AuthModal from 'components/AuthModal'
 import Header from 'components/Header'
-/*import Home from 'pages/Home'*/
+import Home from 'pages/Home'
 import Hikes from "pages/Hikes"
 import 'styles/ReactWelcome.css'
 
 const App = () => {
   return (
-    <div className='App'>
-      <Header />
-      <Hikes />
-      <LoggedInStatus />
-      <AuthModal />
-    </div>
+    <Router>
+      <div className='App'>
+        <Header />
+
+        <main className='page-constent'>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/hikes" element={<Hikes />} />
+          </Routes>
+        </main>
+        
+        <footer className='status-footer'>
+          <LoggedInStatus />
+        </footer>
+        <AuthModal />
+      </div>
+    </Router>
   )
 }
 

@@ -7,6 +7,7 @@ import Home from 'pages/Home'
 import Hikes from "pages/Hikes"
 import 'styles/ReactWelcome.css'
 import Planning from 'pages/Planning'
+import Camps from 'pages/Camps'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/hikes" element={<Hikes />} />
             <Route path="/planning" element={<Planning />} />
+            <Route path="/camping" element={<Camps />} />
           </Routes>
         </main>
         

@@ -1,142 +1,57 @@
 .camps-page {
-    width: 100%;
-    min-height: 100vh;
-    background: #1b120a;
-    color: #f3e9dc;
+    background: #f4f1ec;
+    font-family: "Segoe UI", sans-serif;
   }
   
   /* HERO */
   .camps-hero {
-    width: 100%;
-    padding: 80px 20px;
-    background: linear-gradient(
-        rgba(40, 24, 12, 0.65),
-        rgba(40, 24, 12, 0.65)
-      ),
-      url("../assets/tetons.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                url("../assets/camps-hero.jpg") center/cover no-repeat;
+    color: white;
+    padding: 5rem 2rem;
     text-align: center;
   }
   
-  .camps-hero h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #f7d7a7; /* warm sand */
-    letter-spacing: 1px;
-  }
-  
-  .camps-hero p {
-    font-size: 1.2rem;
-    opacity: 0.9;
-    color: #f0dcc2;
-  }
-  
-  /* CONTENT */
   .camps-section {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 60px 20px;
+    padding: 3rem;
   }
   
-  /* FILTER BUTTONS */
-  .camps-filters {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
-  }
-  
-  .camps-filters button {
-    background: transparent;
-    border: 1px solid #d2a679;
-    color: #f3e9dc;
-    padding: 8px 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-    font-size: 0.95rem;
-  }
-  
-  .camps-filters button:hover {
-    background: rgba(210, 166, 121, 0.15);
-  }
-  
-  .camps-filters button.active {
-    background: #d2a679;
-    color: #1b120a;
-  }
-  
-  /* CAMP LIST */
   .camps-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
   }
   
-  /* CAMP CARD */
   .camp-card {
-    background: rgba(40, 24, 12, 0.8);
-    border: 1px solid rgba(210, 166, 121, 0.25);
+    background: #ffffff;
+    padding: 1.5rem;
     border-radius: 12px;
-    padding: 20px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-top: 6px solid #8c5e3c;
   }
   
-  .camp-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
-  }
-  
-  /* TITLE */
   .camp-card h3 {
-    margin: 0 0 6px 0;
-    font-size: 1.4rem;
-    color: #f7d7a7;
+    color: #5a3d27;
   }
   
-  /* TYPE BADGE */
   .camp-type {
     display: inline-block;
-    margin-bottom: 10px;
-    padding: 3px 10px;
-    border-radius: 12px;
-    font-size: 0.75rem;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    background: rgba(210, 166, 121, 0.15);
-    color: #d2a679;
+    background: #e0c2a2;
+    color: #4a3a2a;
+    padding: 0.25rem 0.6rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
   }
   
-  /* DESCRIPTION */
-  .camp-description {
-    font-size: 0.95rem;
-    line-height: 1.5;
-    color: #f3e9dc;
-  }
-  
-  /* NOTES */
-  .camp-notes {
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: #e6d2b8;
-    opacity: 0.9;
-  }
-  
-  /* LINK */
   .camp-link {
     display: inline-block;
-    margin-top: 14px;
-    color: #d2a679;
+    margin-top: 0.5rem;
+    color: #8c5e3c;
     text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s ease;
+    font-weight: bold;
   }
   
   .camp-link:hover {
-    color: #f7d7a7;
     text-decoration: underline;
-  }
-  
-  /* subtle divider look like planning page */
-  .camp-card:not(:last-child) {
-    border-bottom: 1px solid rgba(210, 166, 121, 0.2);
   }

@@ -15,7 +15,9 @@ export default function Camps() {
   const [camps, setCamps] = useState<Camp[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/camps").then(res => setCamps(res.data));
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/camps`)
+    .then(res => setCamps(res.data))
+    .catch(err => console.error(err));
   }, []);
 
   return (

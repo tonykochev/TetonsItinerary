@@ -15,7 +15,7 @@ const Hikes: React.FC = () => {
   const [selectedHikes, setSelectedHikes] = useState<string[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/hikes")
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/hikes`)
       .then(res => res.json())
       .then(data => setHikes(data));
   }, []);

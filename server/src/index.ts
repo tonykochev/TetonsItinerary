@@ -1,5 +1,6 @@
 import dotenv from 'dotenv'
 dotenv.config()
+import cors from 'cors'
 
 import app from './utils/app' // (server)
 import mongo from './utils/mongo' // (database)
@@ -25,6 +26,10 @@ const bootstrap = async () => {
   app.use('/api/hikes', hikesRoutes);
 
   app.use('/api/camps', campsRouter);
+
+  app.use(cors({
+    origin: "https://purple-moss-00a24661e.6.azurestaticapps.net"
+  }))
 
   app.listen(PORT, () => {
     console.log(`✅ Server is listening on port: ${PORT}`)

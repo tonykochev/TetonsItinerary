@@ -30,6 +30,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.8",
     "axios": "^1.13.1",
+    "cors": "^2.8.6",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.13.0",
@@ -37,6 +38,7 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.19",
     "@types/react": "^19.0.12",
     "@types/react-dom": "^19.0.4",
     "serve": "^14.2.5"

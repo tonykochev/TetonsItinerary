@@ -1,6 +1,6 @@
 import React from "react";
 import "styles/home.css";
-import meImg from "assets/me.jpg";
+import meImg from "../assets/me.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Home: React.FC = () => {
